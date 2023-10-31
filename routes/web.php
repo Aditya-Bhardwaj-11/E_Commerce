@@ -27,6 +27,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
  Route::group(['middleware' => ['auth','isAdmin']], function () {
     Route::get('/dashboard', function () {
-        return "This is the Admin Dashboard";
+        return view('admin.index');
      });
 });
