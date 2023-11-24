@@ -20,7 +20,8 @@ class CategoryController extends Controller
     public function insert(Request $request)
     {
         $category=new Category();
-         if($request->hasFile('image')){
+         if($request->hasFile('image'))
+         {
             $file=$request->file('image');
             $ext = $file->getClientOriginalExtension();
             $filename=time().'.'.$ext;
@@ -39,6 +40,7 @@ class CategoryController extends Controller
         $category->meta_keywords = $request->input('meta_keywords');
         $category->meta_descript = $request->input('meta_descript');
         $category->save();
+
         return redirect('/dashboard')->with('status','Category Added Successfully');
     }
 }
