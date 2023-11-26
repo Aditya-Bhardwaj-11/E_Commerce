@@ -18,6 +18,7 @@
     <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
 
     <!-- Styles -->
+    <link href="{{ asset('admin/css/custom.css?v=2.1.2') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/material-dashboard.css?v=2.1.2') }}" rel="stylesheet">
 
 
