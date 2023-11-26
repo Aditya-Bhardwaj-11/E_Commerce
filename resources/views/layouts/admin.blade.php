@@ -45,6 +45,30 @@
     <Script src="{{ asset('admin/js/bootstrap-material-design.min.js') }}" defer></Script>
     <Script src="{{ asset('admin/js/perfect-scrollbar.jquery.min.js') }}" defer></Script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (session('status'))
+        <script>
+            // Swal.fire("{{ session('status') }}");
+            Swal.fire({
+                title: "{{ session('status') }}",
+                showClass: {
+                    popup: `
+                    animate__animated
+                    animate__fadeInUp
+                    animate__faster
+                    `
+                },
+                hideClass: {
+                    popup: `
+                    animate__animated
+                    animate__fadeOutDown
+                    animate__faster
+                    `
+                }
+            });
+        </script>
+    @endif
 
     @yield('scripts')
 
