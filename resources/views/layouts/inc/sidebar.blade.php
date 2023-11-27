@@ -17,25 +17,25 @@
           </li>
           <li class="nav-item {{ Request::is('categories') ? 'active' : '' }}">
             <a class="nav-link" href="{{ url('categories') }}">
-              <i class="material-icons">person</i>
+              <i class="material-icons">shopping_bag</i>
               <p>Categories</p>
             </a>
           </li>
           <li class="nav-item {{ Request::is('add-category') ? 'active' : '' }}">
             <a class="nav-link" href="{{ url('add-category') }}">
-              <i class="material-icons">person</i>
+              <i class="material-icons">card_travel</i>
               <p>Add Category</p>
             </a>
           </li>
           <li class="nav-item {{ Request::is('products') ? 'active' : '' }}">
             <a class="nav-link" href="{{ url('products') }}">
-              <i class="material-icons">person</i>
+              <i class="material-icons">store</i>
               <p>Products</p>
             </a>
           </li>
           <li class="nav-item {{ Request::is('add-products') ? 'active' : '' }}">
             <a class="nav-link" href="{{ url('add-products') }}">
-              <i class="material-icons">person</i>
+              <i class="material-icons">add_shopping_cart</i>
               <p>Add Products</p>
             </a>
           </li>
