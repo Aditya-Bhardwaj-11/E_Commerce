@@ -23,6 +23,9 @@
     <link href="{{ asset('frontend/css/bootstrap5.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
 
+    <link href="{{ asset('frontend/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/owl.theme.default.min.css') }}" rel="stylesheet">
+
 
 </head>
 <body>
@@ -32,9 +35,15 @@
         @yield('content')
     </div>
 
-    <Script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" defer></Script>
 
+    <Script src="{{ asset('frontend/js/jquery-3.7.1.min.js') }}" defer></Script>
+    <Script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" defer></Script>
+    <Script src="{{ asset('frontend/js/owl.carousel.min.js') }}" defer></Script>
+
+    {{-- <script>src="https://code.jquery.com/jquery-3.7.1.min.js"</script> --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.com/libraries/OwlCarousel2"></script>
 
     @if (session('status'))
         <script>
