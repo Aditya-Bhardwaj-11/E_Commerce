@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url('category') }}">Category</a>
@@ -53,9 +53,9 @@
 
                 @endguest
             </ul>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
+          </li> --}}
         </ul>
       </div>
     </div>
